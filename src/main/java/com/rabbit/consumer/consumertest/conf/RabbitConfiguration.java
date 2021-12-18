@@ -68,7 +68,7 @@ public class RabbitConfiguration {
 		return BindingBuilder
 				.bind(this.queuePedidoDeadLetter())
 				.to(this.exchangePedidoDeadLetter())
-				.with("cozinha.deadletter")
+				.with("pedido.deadletter")
 				.noargs();
 					
 		
